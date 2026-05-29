@@ -1,3 +1,4 @@
+/* ===== RESET & BASE STYLES ===== */
 * {
   margin: 0;
   padding: 0;
@@ -8,9 +9,10 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #f5f5f5;
+  color: #333;
 }
 
-/* Navigation */
+/* ===== NAVIGATION ===== */
 nav {
   display: flex;
   justify-content: space-between;
@@ -22,30 +24,58 @@ nav {
   width: 100%;
   top: 0;
   z-index: 1000;
+  flex-wrap: wrap;
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.logo-image {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
 }
 
 .nav-links a {
   color: white;
   text-decoration: none;
-  margin-left: 30px;
   transition: color 0.3s;
+  font-weight: 500;
 }
 
 .nav-links a:hover {
   color: #64ffda;
 }
 
-/* Hero Section */
+/* ===== HERO SECTION ===== */
 .Shillalo {
-  padding: 150px 50px 80px;
+  padding: 150px 20px 80px;
   text-align: center;
   background: linear-gradient(135deg, #0a192f 0%, #1a2a4a 100%);
   color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Mee {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #64ffda;
+  margin-bottom: 30px;
 }
 
 .Shillalo h2 {
@@ -56,7 +86,8 @@ nav {
 .Shillalo p {
   max-width: 800px;
   margin: 0 auto 30px;
-  line-height: 1.6;
+  line-height: 1.8;
+  font-size: 1.1rem;
 }
 
 .send-btn {
@@ -68,65 +99,129 @@ nav {
   color: #0a192f;
   font-weight: bold;
   cursor: pointer;
-  transition: transform 0.3s;
+  transition: all 0.3s;
+  font-size: 1rem;
 }
 
 .send-btn:hover {
   transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(100, 255, 218, 0.3);
 }
 
-/* About Section */
+/* ===== SECTION TITLES ===== */
+#about h2, #Skills h2, #service h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #0a192f;
+  margin: 50px 0 20px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+#about h2::after, #Skills h2::after, #service h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 3px;
+  background: #64ffda;
+}
+
+/* ===== ABOUT SECTION ===== */
 .content {
-  padding: 80px 50px;
-  max-width: 1200px;
+  padding: 60px 40px;
+  max-width: 1000px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .mark1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #0a192f;
+  margin-bottom: 25px;
 }
 
-/* Cards Container */
+.content p {
+  line-height: 1.8;
+  color: #555;
+  font-size: 1.05rem;
+}
+
+/* ===== CARDS (Agile Delivery, etc) ===== */
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
-  padding: 50px;
+  padding: 40px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .card {
   background: white;
-  padding: 30px;
+  padding: 35px 25px;
   border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
 }
 
-/* Skills Section */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: #0a192f;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #666;
+  line-height: 1.7;
+}
+
+/* ===== SKILLS SECTION ===== */
 #Skills {
-  padding: 80px 50px;
   background: white;
-  text-align: center;
+  padding: 40px 20px 60px;
 }
 
 .skillscontent {
   max-width: 800px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 .skillslist {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 20px 0;
+  margin: 20px 0 10px;
+}
+
+.skillslist h3 {
+  flex: 1;
+  margin-left: 15px;
+  color: #0a192f;
+  font-size: 1.1rem;
+}
+
+.skillslist p {
+  min-width: 60px;
+  font-weight: bold;
+  color: #64ffda;
+  font-size: 1.1rem;
 }
 
 .skillcard {
   background: #e0e0e0;
   border-radius: 10px;
-  height: 10px;
+  height: 12px;
+  margin: 0 0 25px 0;
   overflow: hidden;
 }
 
@@ -134,32 +229,101 @@ nav {
   height: 100%;
   background: #64ffda;
   border-radius: 10px;
+  transition: width 0.5s ease;
 }
 
-/* Services */
-.Service-container {
+.skillLogo {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+/* ===== CERTIFICATIONS ===== */
+.containerwateva {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.box {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+.Meee {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.box h3 {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #0a192f;
+}
+
+/* ===== SERVICES SECTION ===== */
+.Service-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
-  padding: 50px;
+  padding: 40px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .Service-card {
   background: white;
-  padding: 30px;
+  padding: 30px 20px;
   text-align: center;
   border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s;
+  font-weight: 500;
+  color: #0a192f;
 }
 
-/* Projects Grid */
+.Service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  background: #64ffda;
+  color: #0a192f;
+}
+
+.Service-card.card-1 {
+  background: linear-gradient(135deg, #0a192f, #1a2a4a);
+  color: white;
+}
+
+.Service-card.card-1:hover {
+  background: linear-gradient(135deg, #0a192f, #1a2a4a);
+  transform: translateY(-5px);
+}
+
+.awl {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* ===== PROJECTS SECTION ===== */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 25px;
-  padding: 50px;
+  padding: 40px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -168,158 +332,132 @@ nav {
   background: white;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s;
+  text-align: center;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .project-name {
-  padding: 20px;
-  font-weight: bold;
+  padding: 25px 20px;
+  font-weight: 600;
   font-size: 1.2rem;
+  background: #f8f9fa;
+  color: #0a192f;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .detail-btn {
   display: block;
-  padding: 10px;
-  text-align: center;
+  padding: 12px;
   background: #0a192f;
   color: white;
   cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s;
 }
 
-/* Responsive */
+.detail-btn:hover {
+  background: #64ffda;
+  color: #0a192f;
+}
+
+/* ===== CONTACT FLOATING ICONS ===== */
+#contact {
+  display: flex;
+  gap: 15px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 100;
+}
+
+.Contactus, .WhatsApp {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.Contactus:hover, .WhatsApp:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
   nav {
+    padding: 15px 20px;
     flex-direction: column;
-    padding: 15px;
+    gap: 15px;
   }
   
-  .nav-links a {
-    margin: 0 15px;
+  .nav-links {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   .Shillalo h2 {
     font-size: 1.8rem;
   }
   
-  .container, .Service-container, .projects-grid {
-    padding: 20px;
+  .Shillalo p {
+    font-size: 1rem;
+    padding: 0 15px;
   }
-}
-
-/* Fix image sizes */
-.logo-image {
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
-  border-radius: 50%;
-}
-
-.Mee {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin: 20px auto;
-  display: block;
-}
-
-.Contactus, .WhatsApp {
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
-  cursor: pointer;
-  transition: transform 0.3s;
-}
-
-.Contactus:hover, .WhatsApp:hover {
-  transform: scale(1.1);
-}
-
-.skillLogo {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-  margin-right: 15px;
-}
-
-.Meee {
-  width: 100%;
-  max-width: 250px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-/* Make skills list align properly */
-.skillslist {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 0;
-}
-
-.skillslist h3 {
-  flex: 1;
-  margin-left: 10px;
-}
-
-.skillslist p {
-  min-width: 50px;
-  text-align: right;
-}
-
-/* Fix contact section layout */
-#contact {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 100;
-}
-
-/* Make cards consistent */
-.box {
-  text-align: center;
-  padding: 15px;
-}
-
-.box h3 {
-  font-size: 1rem;
-  margin-top: 10px;
-}
-
-/* Responsive fixes */
-@media (max-width: 768px) {
+  
   .Mee {
     width: 150px;
     height: 150px;
   }
   
-  .skillLogo {
-    width: 30px;
-    height: 30px;
+  .container, .Service-container, .projects-grid, .containerwateva {
+    padding: 20px;
+    gap: 15px;
   }
   
-  .Meee {
-    max-width: 180px;
-    height: 120px;
+  .card, .Service-card, .box {
+    padding: 20px;
+  }
+  
+  .mark1, #about h2, #Skills h2, #service h2 {
+    font-size: 1.8rem;
+  }
+  
+  .content {
+    padding: 40px 20px;
+  }
+  
+  .skillslist h3 {
+    font-size: 0.9rem;
+  }
+  
+  .skillLogo {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .project-name {
+    padding: 18px 15px;
+    font-size: 1rem;
   }
   
   #contact {
-    bottom: 10px;
-    right: 10px;
+    bottom: 15px;
+    right: 15px;
+    gap: 10px;
   }
   
   .Contactus, .WhatsApp {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
   }
 }

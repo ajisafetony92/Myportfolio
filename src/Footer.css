@@ -1,23 +1,26 @@
-/* Footer Styles */
 .footer {
   background: #0a192f;
-  color: #ccd6f6;
+  color: #8892b0;
   padding: 60px 20px 30px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 60px;
 }
 
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 40px;
   margin-bottom: 40px;
 }
 
+.footer-section {
+  flex: 1;
+  min-width: 180px;
+}
+
 .footer-section h3 {
-  color: #fff;
+  color: white;
   font-size: 1.3rem;
   margin-bottom: 20px;
   position: relative;
@@ -88,31 +91,16 @@
 
 @media (max-width: 768px) {
   .footer-container {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     text-align: center;
   }
-
+  
   .footer-section h3::after {
     left: 50%;
     transform: translateX(-50%);
   }
-
+  
   .contact-info p {
     justify-content: center;
   }
-}
-
-/* Add this to Footer.css */
-.footer-section ul li a,
-.footer-section ul li Link {
-  color: #8892b0;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.footer-section ul li a:hover,
-.footer-section ul li Link:hover {
-  color: #64ffda;
-  padding-left: 5px;
 }
