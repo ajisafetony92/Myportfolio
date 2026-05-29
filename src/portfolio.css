@@ -210,3 +210,116 @@ nav {
     padding: 20px;
   }
 }
+
+/* Fix image sizes */
+.logo-image {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.Mee {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: block;
+}
+
+.Contactus, .WhatsApp {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.Contactus:hover, .WhatsApp:hover {
+  transform: scale(1.1);
+}
+
+.skillLogo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-right: 15px;
+}
+
+.Meee {
+  width: 100%;
+  max-width: 250px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Make skills list align properly */
+.skillslist {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.skillslist h3 {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.skillslist p {
+  min-width: 50px;
+  text-align: right;
+}
+
+/* Fix contact section layout */
+#contact {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+/* Make cards consistent */
+.box {
+  text-align: center;
+  padding: 15px;
+}
+
+.box h3 {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Responsive fixes */
+@media (max-width: 768px) {
+  .Mee {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .skillLogo {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .Meee {
+    max-width: 180px;
+    height: 120px;
+  }
+  
+  #contact {
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  .Contactus, .WhatsApp {
+    width: 40px;
+    height: 40px;
+  }
+}
