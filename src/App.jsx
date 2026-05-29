@@ -5,13 +5,26 @@ import FAQ from './FAQ';
 import PrivacyPolicy from './PrivacyPolicy';
 import TermsOfService from './TermsOfService';
 
+import logoImage from './assets/My logo.png';
+import myPicture from './assets/Olayinka .jpg';
+import contactImage from './assets/images(1).png';
+import whatsappImage from './assets/images(8).jpg';
+import htmlLogo from './assets/HTML.jpg';
+import cssLogo from './assets/css-logo-02.webp';
+import jsLogo from './assets/Javascript.jpg';
+import pythonLogo from './assets/Makeshiftpythonlogo.png';
+import codingImage from './assets/coding.jpg';
+import webguyImage from './assets/Webguy.jpg';
+import googleImage from './assets/Google.png';
+import mongoImage from './assets/Mongo.jpg';
+
 // Homepage Component
 function HomePage() {
   return (
     <>
       <nav>
         <div className="logo">Nexus Craft</div>
-        <img className="logo-image" src="/src/assets/My logo.png" alt="Logo" />
+        <img className="logo-image" src={logoImage} alt="Logo" />
         <div className="nav-links">
           <a href="#home">Home</a>
           <a href="#about">About</a>
@@ -22,7 +35,7 @@ function HomePage() {
       </nav>
 
       <div id="home" className="Shillalo">
-        <img className="Mee" src="/src/assets/Olayinka .jpg" alt="My picture" />
+        <img className="Mee" src={myPicture} alt="My picture" />
         <h2>Hello! I'm Anthony Olayinka</h2>
         <p>A passionate Web developer, I turn ideas into fast, responsive, and user-friendly web experiences. 
           With a focus on clean code, thoughtful design, and real-world functionality, 
@@ -33,10 +46,10 @@ function HomePage() {
 
       <div id="contact">
         <a href="mailto:anthonyolaola@gmail.com" target="_blank" rel="noopener noreferrer">
-          <img className="Contactus" src="/src/assets/images(1).png" alt="Contact" />
+          <img className="Contactus" src={contactImage} alt="Contact" />
         </a>
         <a href="https://wa.me/2348131593974" target="_blank" rel="noopener noreferrer">
-          <img className="WhatsApp" src="/src/assets/images(8).jpg" alt="WhatsApp" />
+          <img className="WhatsApp" src={whatsappImage} alt="WhatsApp" />
         </a>
       </div>
 
@@ -66,7 +79,7 @@ function HomePage() {
         <h2>My Skills</h2>
         <div className="skillscontent">
           <div className="skillslist">
-            <img className="skillLogo" src="/src/assets/HTML.jpg" alt="Html Logo" />
+            <img className="skillLogo" src={htmlLogo} alt="Html Logo" />
             <h3>HTML</h3>
             <p><b>90%</b></p>
           </div>
@@ -74,7 +87,7 @@ function HomePage() {
             <div className="pskills" style={{ width: '90%' }}></div>
           </div>
           <div className="skillslist">
-            <img className="skillLogo" src="/src/assets/css-logo-02.webp" alt="CSS Logo" />
+            <img className="skillLogo" src={cssLogo} alt="CSS Logo" />
             <h3>CSS</h3>
             <p><b>70%</b></p>
           </div>
@@ -82,7 +95,7 @@ function HomePage() {
             <div className="pskills" style={{ width: '70%' }}></div>
           </div>
           <div className="skillslist">
-            <img className="skillLogo" src="/src/assets/Javascript.jpg" alt="JS Logo" />
+            <img className="skillLogo" src={jsLogo} alt="JS Logo" />
             <h3>JS</h3>
             <p><b>80%</b></p>
           </div>
@@ -90,7 +103,7 @@ function HomePage() {
             <div className="pskills" style={{ width: '80%' }}></div>
           </div>
           <div className="skillslist">
-            <img className="skillLogo" src="/src/assets/Makeshiftpythonlogo.png" alt="Python Logo" />
+            <img className="skillLogo" src={pythonLogo} alt="Python Logo" />
             <h3>Python</h3>
             <p><b>70%</b></p>
           </div>
@@ -102,25 +115,25 @@ function HomePage() {
 
       <div className="containerwateva">
         <div className="box">
-          <img className="Meee" src="/src/assets/coding.jpg" alt="image" />
+          <img className="Meee" src={codingImage} alt="image" />
           <h3>Frontend Master- Advanced React</h3> <br />
           Frontend Master <br />
           2023
         </div>
         <div className="box">
-          <img className="Meee" src="/src/assets/Webguy.jpg" alt="foto" />
+          <img className="Meee" src={webguyImage} alt="foto" />
           <h3>AWS Certified Developer</h3> <br />
           Amazon Web Service <br />
           2023
         </div>
         <div className="box box-3">
-          <img className="Meee" src="/src/assets/Google.png" alt="fhoto" />
+          <img className="Meee" src={googleImage} alt="fhoto" />
           <h3>Google Analytics Certification</h3> <br />
           Google <br />
           2023
         </div>
         <div className="box">
-          <img className="Meee" src="/src/assets/Mongo.jpg" alt="fpoto" />
+          <img className="Meee" src={mongoImage} alt="fpoto" />
           <h3>MongDB Basics</h3> <br />
           MongDB University <br />
           2023
