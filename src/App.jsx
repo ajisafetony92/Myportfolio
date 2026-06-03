@@ -54,7 +54,7 @@ function HomePage() {
       </div>
 
       <div id="about" className="content">
-        <h2 className="mark1">About us.</h2> <br /><br />
+      <center> <h2 className="mark1">About us.</h2></center> <br /><br />
         I believe a website should be more than a digital business card, it should be an engine for growth. I'm a Frontend Developer who focuses on bridging the gap between complex technical problems and intuitive user experiences.
         I don't just write code; I build tools that solve problems. Whether it's optimizing a database for speed or crafting a pixel-perfect UI, my goal is always the same: making the web work better for you.
       </div>
@@ -140,8 +140,13 @@ function HomePage() {
         </div>
       </div>
 
-      <div id="service" className="Service-container">
-        <div className="Service-card card-1"><h2 className="awl">Services</h2></div>
+
+ <div className="serv1"><h2 className="awl">Services</h2>
+ </div>
+      
+      
+      
+        <div id="service" className="Service-container">        
         <div className="Service-card">Web Development</div>
         <div className="Service-card">Frontend React Development</div>
         <div className="Service-card">Next Full Stack Apps</div>
