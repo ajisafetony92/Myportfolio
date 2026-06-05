@@ -17,6 +17,9 @@ import codingImage from './assets/coding.jpg';
 import webguyImage from './assets/Webguy.jpg';
 import googleImage from './assets/Google.png';
 import mongoImage from './assets/Mongo.jpg';
+import InstagramImg from './assets/Instagram.jpeg';
+import TiktokImg from './assets/Tiktok.png';
+import FacebookImg from './assets/Facebook.jpeg';
 
 // Homepage Component
 function HomePage() {
@@ -54,13 +57,13 @@ function HomePage() {
   
   {/* New Social Media Links */}
   <a href="https://instagram.com/hamster.6853" target="_blank" rel="noopener noreferrer">
-    <img className="Contactus" src={Instagram.jpeg} alt="Instagram" />
+    <img className="Contactus" src={InstagramImg} alt="Instagram" />
   </a>
   <a href="https://tiktok.com/@anthonyolayinka" target="_blank" rel="noopener noreferrer">
-    <img className="Contactus" src={Tiktok.png} alt="TikTok" />
+    <img className="Contactus" src={TiktokImg} alt="TikTok" />
   </a>
   <a href="https://facebook.com/ifeoluwaajisafe92" target="_blank" rel="noopener noreferrer">
-    <img className="Contactus" src={Facebook.jpeg} alt="Facebook" />
+    <img className="Contactus" src={FacebookImg} alt="Facebook" />
   </a>
 </div>
 
@@ -267,11 +270,6 @@ function HomePage() {
   </div>
 
 </div>
-        <div className="project-card">
-          <div className="project-name">Learning Management System</div>
-          <span className="detail-btn">View Details</span>
-        </div>
-      </div>
 
       <footer className="footer">
   <div className="footer-container">
