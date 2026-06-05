@@ -45,13 +45,24 @@ function HomePage() {
       </div>
 
       <div id="contact">
-        <a href="mailto:anthonyolaola@gmail.com" target="_blank" rel="noopener noreferrer">
-          <img className="Contactus" src={contactImage} alt="Contact" />
-        </a>
-        <a href="https://wa.me/2348131593974" target="_blank" rel="noopener noreferrer">
-          <img className="WhatsApp" src={whatsappImage} alt="WhatsApp" />
-        </a>
-      </div>
+  <a href="mailto:anthonyolaola@gmail.com" target="_blank" rel="noopener noreferrer">
+    <img className="Contactus" src={contactImage} alt="Contact" />
+  </a>
+  <a href="https://wa.me/2348131593974" target="_blank" rel="noopener noreferrer">
+    <img className="WhatsApp" src={whatsappImage} alt="WhatsApp" />
+  </a>
+  
+  {/* New Social Media Links */}
+  <a href="https://instagram.com/hamster.6853" target="_blank" rel="noopener noreferrer">
+    <img className="Contactus" src={Instagram.jpeg} alt="Instagram" />
+  </a>
+  <a href="https://tiktok.com/@anthonyolayinka" target="_blank" rel="noopener noreferrer">
+    <img className="Contactus" src={Tiktok.png} alt="TikTok" />
+  </a>
+  <a href="https://facebook.com/ifeoluwaajisafe92" target="_blank" rel="noopener noreferrer">
+    <img className="Contactus" src={Facebook.jpeg} alt="Facebook" />
+  </a>
+</div>
 
       <div id="about" className="content">
       <center> <h2 className="mark1">About us.</h2></center> <br /><br />
@@ -153,44 +164,109 @@ function HomePage() {
         <div className="Service-card">Cybersecurity Testing</div>
         <div className="Service-card">API & Database Setup</div>
       </div>
+<div className="projects-grid">
+  
+  {/* Project 1 - Crypto Dashboard */}
+  <div className="project-card">
+    <div className="project-name">Crypto Dashboard</div>
+    <p className="project-desc">Real-time cryptocurrency prices, charts, and market data</p>
+    <div className="project-tech">React • API • Chart.js</div>
+    <a href="https://your-crypto-app.com" target="_blank" rel="noopener noreferrer" className="detail-btn">
+      🔗 View Project
+    </a>
+  </div>
 
-      <div className="projects-grid">
-        <div className="project-card">
-          <div className="project-name">Crypto Dashboard</div>
-          <span className="detail-btn">View Details</span>
-        </div>
-        <div className="project-card">
-          <div className="project-name">Movie Site</div>
-          <span className="detail-btn">View Details</span>
-        </div>
-        <div className="project-card">
-          <div className="project-name">Property App</div>
-          <span className="detail-btn">View Details</span>
-        </div>
-        <div className="project-card">
-          <div className="project-name">E-Commerce Store</div>
-          <span className="detail-btn">View Details</span>
-        </div>
-        <div className="project-card">
-          <div className="project-name">Chat App</div>
-          <span className="detail-btn">View Details</span>
-        </div>
-        <div className="project-card">
-          <div className="project-name">Task Manager</div>
-          <span className="detail-btn">View Details</span>
-        </div>
-        <div className="project-card">
-          <div className="project-name">Portfolio Website</div>
-          <span className="detail-btn">View Details</span>
-        </div>
-        <div className="project-card">
-          <div className="project-name">Blog Platform</div>
-          <span className="detail-btn">View Details</span>
-        </div>
-        <div className="project-card">
-          <div className="project-name">Weather App</div>
-          <span className="detail-btn">View Details</span>
-        </div>
+  {/* Project 2 - Movie Site */}
+  <div className="project-card">
+    <div className="project-name">Movie Site</div>
+    <p className="project-desc">Browse movies, search, view details and trailers</p>
+    <div className="project-tech">React • TMDB API • CSS</div>
+    <a href="https://your-movie-site.com" target="_blank" rel="noopener noreferrer" className="detail-btn">
+      🔗 View Project
+    </a>
+  </div>
+
+  {/* Project 3 - Property App */}
+  <div className="project-card">
+    <div className="project-name">Property App</div>
+    <p className="project-desc">Find and list properties for rent or sale</p>
+    <div className="project-tech">React • Map API • Firebase</div>
+    <a href="https://your-property-app.com" target="_blank" rel="noopener noreferrer" className="detail-btn">
+      🔗 View Project
+    </a>
+  </div>
+
+  {/* Project 4 - E-Commerce Store */}
+  <div className="project-card">
+    <div className="project-name">E-Commerce Store</div>
+    <p className="project-desc">Online shopping with cart, checkout and payments</p>
+    <div className="project-tech">React • Redux • Stripe</div>
+    <a href="https://your-ecommerce.com" target="_blank" rel="noopener noreferrer" className="detail-btn">
+      🔗 View Project
+    </a>
+  </div>
+
+  {/* Project 5 - Chat App */}
+  <div className="project-card">
+    <div className="project-name">Chat App</div>
+    <p className="project-desc">Real-time messaging with rooms and private chats</p>
+    <div className="project-tech">React • Socket.io • Node.js</div>
+    <a href="https://your-chat-app.com" target="_blank" rel="noopener noreferrer" className="detail-btn">
+      🔗 View Project
+    </a>
+  </div>
+
+  {/* Project 6 - Task Manager */}
+  <div className="project-card">
+    <div className="project-name">Task Manager</div>
+    <p className="project-desc">Todo app with categories, search, filter and dark mode</p>
+    <div className="project-tech">React • LocalStorage • CSS</div>
+    <a href="https://todo-app1-opal.vercel.app/" target="_blank" rel="noopener noreferrer" className="detail-btn">
+      🔗 View Project
+    </a>
+  </div>
+
+  {/* Project 7 - Portfolio Website */}
+  <div className="project-card">
+    <div className="project-name">Portfolio Website</div>
+    <p className="project-desc">Personal portfolio showcasing my work and skills</p>
+    <div className="project-tech">React • CSS • Vercel</div>
+    <a href="https://your-portfolio.com" target="_blank" rel="noopener noreferrer" className="detail-btn">
+      🔗 View Project
+    </a>
+  </div>
+
+  {/* Project 8 - Blog Platform */}
+  <div className="project-card">
+    <div className="project-name">Blog Platform</div>
+    <p className="project-desc">Create, edit and share blog posts</p>
+    <div className="project-tech">React • Markdown • Firebase</div>
+    <a href="https://your-blog.com" target="_blank" rel="noopener noreferrer" className="detail-btn">
+      🔗 View Project
+    </a>
+  </div>
+
+  {/* Project 9 - Weather App */}
+  <div className="project-card">
+    <div className="project-name">Weather App</div>
+    <p className="project-desc">Check weather forecasts for any city worldwide</p>
+    <div className="project-tech">React • Weather API • CSS</div>
+    <a href="https://your-weather-app.com" target="_blank" rel="noopener noreferrer" className="detail-btn">
+      🔗 View Project
+    </a>
+  </div>
+
+  {/* Project 10 - Learning Management System */}
+  <div className="project-card">
+    <div className="project-name">LMS Platform</div>
+    <p className="project-desc">Online courses, quizzes and progress tracking</p>
+    <div className="project-tech">React • Node.js • MongoDB</div>
+    <a href="https://your-lms.com" target="_blank" rel="noopener noreferrer" className="detail-btn">
+      🔗 View Project
+    </a>
+  </div>
+
+</div>
         <div className="project-card">
           <div className="project-name">Learning Management System</div>
           <span className="detail-btn">View Details</span>
